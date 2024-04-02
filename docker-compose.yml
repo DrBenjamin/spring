@@ -1,0 +1,20 @@
+version: '3'
+name: springboot
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: spring
+    restart: always
+    ports:
+      - "8081:8081"
+    networks:
+      - network1
+networks:
+  network1:
+    name: springboot_default
+    driver: bridge
+    external: false
+volumes:
+  web_data: {}
