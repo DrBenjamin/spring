@@ -2,7 +2,7 @@ Spring Boot Demo.
 
 ## Build the application and install dependencies
 
-Run the tests with maven and install all needed dependencies, finally build:
+Run the tests with maven and build with all needed dependencies:
 
 ```bash
 mvn wrapper:wrapper
